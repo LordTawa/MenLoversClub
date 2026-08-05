@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  overscroll-behavior-y: none;
+}
+
+body {
+  background: url('Images/Background.jpg');
+  background-size: cover; 
+  background-position: fixed;
+  overflow-x: hidden;
+  height: 100%;
+  animation: moveBackground 30s linear infinite, stretchBackground 5s infinite alternate;
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
+}
+
+html, body {
+  height: 100%;
+  font-family: 'Space Age', sans-serif;
+  color: black;
+}
+
+.nav {
+  background: url("Images/TaWebsiteNav.png");
+  width: 100%;
+  z-index: 500;
+  height: 27%;
+  top: 0;
+  position: fixed;
+  top: 0;
+  width: 80%;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.main {
+  width: 80%;
+  height: 100%;
+  border: 10px solid;
+  border-image: linear-gradient(to bottom, #000000, #aaaaaa, #bdbdbd, #808080, #404040, #ffffff, #000000) 1;
+  border-radius: 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hero {
+  background: url('Images/Background2.jpg');
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-overlay {
+  width: 100%;
+  height: 70%;
+}
+
+.hero-overlay img {
+  width: 100%;
+  height: 100%;
+}
